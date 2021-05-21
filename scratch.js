@@ -18,8 +18,11 @@ function createLine(id, date, description, appreunant, solved) {
 
     let td4 = document.createElement("td");
     td4.id = appreunant;
-    td4.innerText = tabLearners[0][appreunant]["id"];
-    //td4.innerText = document.getElementById("learner-select").getElementsByTagName("option").item(appreunant).innerText;
+    td4.innerText = appreunant;
+    //td4.innerText = document.getElementById("learner-select").getElementsByTagName("option").item(appreunant).innerHTML;
+    //console.log(tabLearners.find(learner => learner.id === appreunant))
+    //console.log(tabLearners)
+
 
     let td5 = document.createElement("td");
     td5.innerText = solved
